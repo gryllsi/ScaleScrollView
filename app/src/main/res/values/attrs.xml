@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--尺子属性-->
+    <declare-styleable name="ScaleScrollView">
+        <attr name="ScaleValueColor" format="color" />
+        <attr name="ScaleTextSize" format="dimension" />
+        <attr name="ScaleWidth" format="dimension" />
+        <attr name="ScaleMaxHeight" format="dimension" />
+        <attr name="MaxScale" format="float" />
+        <attr name="MinScale" format="float" />
+        <attr name="ScaleShowUp" format="boolean" />
+        <attr name="isIntegar" format="boolean" />
+    </declare-styleable>
+
+</resources>
