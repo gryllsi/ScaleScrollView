@@ -1,4 +1,4 @@
-package com.totcy.scalescrollview;
+package com.totcy.salelibrary;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,7 +6,7 @@ import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 
-import com.totcy.scalescrollview.util.DensityUtil;
+import com.totcy.salelibrary.util.DensityUtil;
 
 
 /**
@@ -47,33 +47,31 @@ public abstract class BaseScaleScrollView  extends ViewGroup{
 
         for (int i =   0; i < n; i++) {
             int attr = a.getIndex(i);
-            switch (attr) {
-                case R.styleable.ScaleScrollView_ScaleValueColor:
-                    scaleColor =  a.getColor(attr,scaleColor);
-                    break;
-                case R.styleable.ScaleScrollView_ScaleTextSize:
-                    scaleTextSize =  a.getDimension(attr,scaleTextSize);
-                    break;
-                case R.styleable.ScaleScrollView_ScaleWidth:
-                    scaleWidth = (int) a.getDimension(attr,scaleWidth);
-                    break;
-                case R.styleable.ScaleScrollView_ScaleMaxHeight:
-                    scaleMaxHeight = (int) a.getDimension(attr,scaleMaxHeight);
-                    break;
-                case R.styleable.ScaleScrollView_MinScale:
-                    minScale = a.getFloat(attr,minScale);
-                    break;
-                case R.styleable.ScaleScrollView_MaxScale:
-                    maxScale = a.getFloat(attr,maxScale);
-                    break;
-                case R.styleable.ScaleScrollView_ScaleShowUp:
-                    scaleShowUp = a.getBoolean(attr,scaleShowUp);
-                    break;
-                case R.styleable.ScaleScrollView_isIntegar:
-                    isIntegar = a.getBoolean(attr,isIntegar);
-                    break;
-                default:
-                    break;
+            if (attr == R.styleable.ScaleScrollView_ScaleValueColor) {
+                scaleColor = a.getColor(attr, scaleColor);
+
+            } else if (attr == R.styleable.ScaleScrollView_ScaleTextSize) {
+                scaleTextSize = a.getDimension(attr, scaleTextSize);
+
+            } else if (attr == R.styleable.ScaleScrollView_ScaleWidth) {
+                scaleWidth = (int) a.getDimension(attr, scaleWidth);
+
+            } else if (attr == R.styleable.ScaleScrollView_ScaleMaxHeight) {
+                scaleMaxHeight = (int) a.getDimension(attr, scaleMaxHeight);
+
+            } else if (attr == R.styleable.ScaleScrollView_MinScale) {
+                minScale = a.getFloat(attr, minScale);
+
+            } else if (attr == R.styleable.ScaleScrollView_MaxScale) {
+                maxScale = a.getFloat(attr, maxScale);
+
+            } else if (attr == R.styleable.ScaleScrollView_ScaleShowUp) {
+                scaleShowUp = a.getBoolean(attr, scaleShowUp);
+
+            } else if (attr == R.styleable.ScaleScrollView_isIntegar) {
+                isIntegar = a.getBoolean(attr, isIntegar);
+
+            } else {
             }
         }
 

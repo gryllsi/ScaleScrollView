@@ -1,8 +1,11 @@
 package com.totcy.scalescrollview;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import com.totcy.salelibrary.HorizontalScaleScrollView;
+import com.totcy.salelibrary.MultHorizontalScaleScrollView;
 
 public class MainActivity extends AppCompatActivity implements  HorizontalScaleScrollView.OnScrollListener, MultHorizontalScaleScrollView.OnScrollListener {
 

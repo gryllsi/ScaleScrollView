@@ -1,4 +1,4 @@
-package com.totcy.scalescrollview.util;
+package com.totcy.salelibrary.util;
 
 import android.content.Context;
 import android.util.TypedValue;

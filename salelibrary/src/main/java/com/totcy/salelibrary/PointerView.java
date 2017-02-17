@@ -1,16 +1,15 @@
-package com.totcy.scalescrollview;
+package com.totcy.salelibrary;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.totcy.scalescrollview.util.DensityUtil;
-import com.totcy.scalescrollview.util.DrawUtils;
+import com.totcy.salelibrary.util.DensityUtil;
+import com.totcy.salelibrary.util.DrawUtils;
+
 
 /**
  * Description 尺子的指针
@@ -72,7 +71,7 @@ public class PointerView extends View {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         int height;
         int width;
-        width = (int) (2.5*DrawUtils.getCoordinateX(30,scaleMaxHeight + radius));
+        width = (int) (2.5* DrawUtils.getCoordinateX(30,scaleMaxHeight + radius));
         height = (int) (DrawUtils.getCoordinateY(30,scaleMaxHeight+ radius) + 2 * scaleMaxHeight);
         setMeasuredDimension(width, height);
     }
