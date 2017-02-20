@@ -5,10 +5,9 @@ import android.graphics.RectF;
 
 /**
  * @version V1.0
- * @ClassName: ${CLASS_NAME}
- * @Description: 圆角path
- * @create by: tu
- * @date 2016/08/25 23:38
+ * Description: 圆角path
+ * create by: tu
+ * date 2016/08/25 23:38
  */
 public class DrawUtils {
     public static Path addRoundPath3(int width, int height, float radius) {

@@ -3,11 +3,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-<<<<<<< HEAD
     buildToolsVersion "25.0.2"
-=======
-    buildToolsVersion "23.0.3"
->>>>>>> master
 
     defaultConfig {
         applicationId "com.totcy.scalescrollview"
@@ -28,9 +24,6 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:25.1.1'
-<<<<<<< HEAD
-=======
     compile project(':salelibrary')
->>>>>>> master
 }
 

@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 ext {
-    bintrayRepo = 'maven'
+    bintrayRepo = 'dev_project'
     bintrayName = 'ScaleScrollView'
 
     publishedGroupId = 'com.totcy.scale'
@@ -13,9 +13,9 @@ ext {
     siteUrl = 'https://github.com/792814781/ScaleScrollView'
     gitUrl = 'https://github.com/792814781/ScaleScrollView.git'
 
-    libraryVersion = 'V1.0'
+    libraryVersion = '1.0.0'
 
-    developerId = 'totcy'
+    developerId = 'intotcy'
     developerName = 'flok.tu'
     developerEmail = 'intotcy@gmail.com'
 
@@ -23,6 +23,7 @@ ext {
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
 }
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -52,5 +53,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.1'
     testCompile 'junit:junit:4.12'
 }
+
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+
