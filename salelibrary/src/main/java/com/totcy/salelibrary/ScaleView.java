@@ -1,23 +1,16 @@
-package com.totcy.scalescrollview;
+package com.totcy.salelibrary;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
-import android.os.Build;
-import android.os.Handler;
-import android.os.Message;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.Scroller;
-
-import com.totcy.scalescrollview.util.DensityUtil;
 
 import java.math.BigDecimal;
 

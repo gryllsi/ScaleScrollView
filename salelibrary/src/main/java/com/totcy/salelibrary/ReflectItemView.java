@@ -1,4 +1,4 @@
-package com.totcy.scalescrollview;
+package com.totcy.salelibrary;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
-import com.totcy.scalescrollview.util.DrawUtils;
+import com.totcy.salelibrary.util.DrawUtils;
 
 
 /**

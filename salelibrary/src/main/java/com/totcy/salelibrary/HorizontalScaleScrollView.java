@@ -1,4 +1,4 @@
-package com.totcy.scalescrollview;
+package com.totcy.salelibrary;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -8,8 +8,9 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-import com.totcy.scalescrollview.util.DensityUtil;
-import com.totcy.scalescrollview.util.DrawUtils;
+import com.totcy.salelibrary.util.DensityUtil;
+import com.totcy.salelibrary.util.DrawUtils;
+
 
 /**
  * Description 水平滑动标尺
@@ -41,10 +42,10 @@ public class HorizontalScaleScrollView extends BaseScaleScrollView {
         /**
          * 获得此ViewGroup上级容器为其推荐的宽和高，以及计算模式
          */
-        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
-        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
-        int sizeWidth = MeasureSpec.getSize(widthMeasureSpec);
-        int sizeHeight = MeasureSpec.getSize(heightMeasureSpec);
+        int widthMode = View.MeasureSpec.getMode(widthMeasureSpec);
+        int heightMode = View.MeasureSpec.getMode(heightMeasureSpec);
+        int sizeWidth = View.MeasureSpec.getSize(widthMeasureSpec);
+        int sizeHeight = View.MeasureSpec.getSize(heightMeasureSpec);
 
         // 计算出所有的childView的宽和高
         measureChildren(widthMeasureSpec, heightMeasureSpec);
@@ -66,8 +67,8 @@ public class HorizontalScaleScrollView extends BaseScaleScrollView {
          * 如果是wrap_content设置为我们计算的值
          * 否则：直接设置为父容器计算的值
          */
-        setMeasuredDimension((widthMode == MeasureSpec.EXACTLY) ? sizeWidth
-                : width, (heightMode == MeasureSpec.EXACTLY) ? sizeHeight
+        setMeasuredDimension((widthMode == View.MeasureSpec.EXACTLY) ? sizeWidth
+                : width, (heightMode == View.MeasureSpec.EXACTLY) ? sizeHeight
                 : height);
     }
 
