@@ -13,73 +13,77 @@
 
 
     <TextView
-        android:layout_marginTop="90dp"
         android:id="@+id/tv_scale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
         android:text=""
         android:textSize="18sp"
         />
+
     <com.totcy.salelibrary.HorizontalScaleScrollView
         android:id="@+id/hsScale"
-        android:layout_width="match_parent"
-        android:layout_below="@id/tv_scale"
-        android:layout_height="wrap_content"
         xmlns:scale="http://schemas.android.com/apk/res-auto"
-        scale:ScaleTextSize= "14sp"
-        scale:MinScale= "20"
-        scale:MaxScale= "200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_scale"
+        scale:MaxScale="200"
+        scale:MinScale="20"
+        scale:ScaleTextSize="14sp"
         />
 
     <TextView
-        android:layout_below="@id/hsScale"
         android:id="@+id/tv_scale2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/hsScale"
         android:layout_centerHorizontal="true"
         android:text=""
         android:textSize="18sp"
         />
+
     <com.totcy.salelibrary.HorizontalScaleScrollView
         android:id="@+id/hsScale2"
-        android:layout_width="match_parent"
-        android:layout_below="@id/tv_scale2"
-        android:layout_height="wrap_content"
         xmlns:scale="http://schemas.android.com/apk/res-auto"
-        scale:ScaleTextSize= "14sp"
-        scale:MinScale= "1.1"
-        scale:MaxScale= "33.3"
-        scale:isIntegar= "false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_scale2"
+        scale:MaxScale="33.3"
+        scale:MinScale="1.1"
+        scale:ScaleTextSize="14sp"
+        scale:isIntegar="false"
         />
 
     <TextView
-        android:layout_below="@id/hsScale2"
         android:id="@+id/tv_scale3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_below="@id/hsScale2"
         android:text=""
         android:textSize="18sp"
         />
+
     <TextView
-        android:layout_below="@id/hsScale2"
         android:id="@+id/tv_scale4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
+        android:layout_below="@id/hsScale2"
         android:text=""
         android:textSize="18sp"
         />
+
     <com.totcy.salelibrary.MultHorizontalScaleScrollView
-        android:layout_below="@id/tv_scale3"
         android:id="@+id/mul_scale"
+        xmlns:scale="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        xmlns:scale="http://schemas.android.com/apk/res-auto"
-        scale:ScaleTextSize= "14sp"
-        scale:ScaleWidth= "6dp"
-        scale:ScaleMaxHeight= "16dp"
+        android:layout_below="@id/tv_scale3"
+        scale:ScaleMaxHeight="16dp"
+        scale:ScaleTextSize="14sp"
+        scale:ScaleWidth="6dp"
         />
 
 </RelativeLayout>

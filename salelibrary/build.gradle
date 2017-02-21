@@ -8,7 +8,7 @@ ext {
     libraryName = 'ScaleScrollView'
     artifact = 'scalelibrary'
 
-    libraryDescription = 'custom scale'
+    libraryDescription = 'this is custom scale'
 
     siteUrl = 'https://github.com/792814781/ScaleScrollView'
     gitUrl = 'https://github.com/792814781/ScaleScrollView.git'
