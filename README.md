@@ -5,13 +5,13 @@
 Add dependencies in build.gradle:
 ```
  dependencies {
-       compile 'compile 'com.totcy.scale:scalelibrary:1.0.0''
+       compile 'com.totcy.widget:scalelibrary:1.0.0'
     }
 ```
 Or Maven:
 ```
 <dependency>
-  <groupId>com.totcy.scale</groupId>
+  <groupId>com.totcy.widget</groupId>
   <artifactId>scalelibrary</artifactId>
   <version>1.0.0</version>
   <type>pom</type>

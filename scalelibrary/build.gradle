@@ -1,10 +1,10 @@
 apply plugin: 'com.android.library'
 
 ext {
-    bintrayRepo = 'dev_project'
+    bintrayRepo = 'project_name'
     bintrayName = 'ScaleScrollView'
 
-    publishedGroupId = 'com.totcy.scale'
+    publishedGroupId = 'com.totcy.widget'
     libraryName = 'ScaleScrollView'
     artifact = 'scalelibrary'
 
